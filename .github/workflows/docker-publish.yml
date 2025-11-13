@@ -27,8 +27,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t ghcr.io/adrienmeys/joke-app:latest .
-          docker push ghcr.io/adrienmeys/joke-app:latest
-      
+
       - name: Push Docker image
         run: |
-          docker push ghcr.io/${{ github.repository_owner }}/joke-app:latest
+          docker push ghcr.io/adrienmeys/joke-app:latest
